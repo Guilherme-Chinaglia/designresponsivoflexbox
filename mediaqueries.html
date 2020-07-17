@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querie</title>
+
+    <style>
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box {
+            /* width: 400px; */
+            flex: 1;
+        }
+
+        /* @media screen and (max-width: 425px) {
+            nav {
+                background-color: lightblue;
+            }
+        } */
+
+        @media screen and (max-width: 425px) and (orientation: landscape){
+            nav {
+                background-color: lightblue;
+            }
+        }
+      
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="box">
+        Conteúdo
+    </div>
+</body>
+</html>
